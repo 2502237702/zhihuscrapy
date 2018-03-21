@@ -104,9 +104,11 @@ SCHEDULER = "scrapy_redis.scheduler.Scheduler"
 # Ensure all spiders share same duplicates filter through redis.
 DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
 
-REDIS_URL = 'redis://root@127.0.0.1:6379'
+# REDIS_URL = 'redis://root@127.0.0.1:6379'
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
 
+# SCHEDULER_PERSIST = True
 
-
-
+SCHEDULER_FLUSH_ON_START = True
 
